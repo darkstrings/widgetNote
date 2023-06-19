@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gray;
+  font-family: "Didact Gothic", sans-serif;
+  margin: 20;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.note {
+  background-color: bisque;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 500px;
+  height: 500px;
+  margin: 20px;
+}
+.note .tools {
+  background-color: rgb(185, 28, 28);
+  padding: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.note .tools button {
+  background-color: transparent;
+  color: bisque;
+  border: none;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+/* Where you type */
+.note textarea {
+  overflow: hidden;
+  outline: none;
+  height: 500px;
+  width: 100%;
+  border: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+/* Where it shows */
+.note .main {
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+  background-color: bisque;
+  font-size: 1.2rem;
+  border: none;
+  font-family: inherit;
+  padding: 0.5rem;
+}
+
+.note .hidden {
+  display: none;
+}
+
+.add {
+  background-color: rgb(185, 28, 28);
+  font-size: 2rem;
+  border-radius: 3;
+  padding: 0.5rem;
+  color: bisque;
+  margin: 2rem auto;
+  font-family: inherit;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
